@@ -1,5 +1,5 @@
 {
-  "name": "share-it",
+  "name": "myplace",
   "version": "1.0.0",
   "description": "Sharing space...",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sattanaso/ShareIt.git"
+    "url": "git+https://github.com/Sattanaso/myplace.git"
   },
-  "author": "Express 19 Team",
-  "license": "ISC",
+  "author": "Sattanaso",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sattanaso/ShareIt/issues"
+    "url": "https://github.com/Sattanaso/myplace/issues"
   },
-  "homepage": "https://github.com/Sattanaso/ShareIt#readme",
+  "homepage": "https://github.com/Sattanaso/myplace#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
