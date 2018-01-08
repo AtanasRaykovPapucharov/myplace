@@ -1,4 +1,35 @@
 @import 'global';
 
+.clock {
+    color: rgb(86, 63, 86);
+    text-align: center;
+}
+
 .wrapper-daily {
+    .day {
+        border: 1px solid $main-color;
+        margin: 2px;
+        color: rgb(113, 94, 113);
+        padding-left: 2px;
+    }
+    .hour {
+        border: 1px solid $main-color;
+        padding: 2px;
+        color: rgb(140, 118, 107);
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width : 480px) {
+}
+
+@media only screen and (min-width : 820px) {
+    .wrapper-daily {
+        display: flex;
+
+        .day {
+            flex: 1;
+        }
+    }
 }

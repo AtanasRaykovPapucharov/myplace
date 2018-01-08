@@ -1,20 +1,21 @@
 .main {
 	background-color: silver;
-	color: #000000;
+	color: rgb(86, 63, 86);
 	min-height: 550px; 
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-left: 13px;
 	padding-right: 5%;
+	padding-bottom: 10px;
 }
 
 @media only screen and (min-width : 480px) {
-    .main {
-		padding-right: 1.8%;
+		.main {
+			padding-right: 1.8%;
     }
 }
 
 @media only screen and (min-width : 820px) {
     .main {
-		padding-right: 1.5%;
+			padding-right: 1.5%;
     }
 }

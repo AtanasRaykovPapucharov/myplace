@@ -1,9 +1,19 @@
 $header-bg-color: rgb(164, 159, 159);
 $nav-text-hover: rgb(199, 199, 199);
+$light-hover: rgb(220, 220, 220);
+$light-hover-0:rgb(220, 198, 198);
 $main-color: rgb(194, 110, 110);
 
 * span i {
     color: $nav-text-hover;
+}
+
+hr {
+   border-bottom: 1px solid $light-hover; 
+}
+
+hr.half {
+    max-width: 50%;
 }
 
 .container {
@@ -14,7 +24,6 @@ $main-color: rgb(194, 110, 110);
 
 @media only screen and (min-width : 820px) {
     .container {
-        display: flex;
         flex-direction: row !important;
     }
    

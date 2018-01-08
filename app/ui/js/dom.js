@@ -45,5 +45,11 @@ $(() => {
 		isToggle = !isToggle;
 	});
 
-	
+
 });
+
+// clock
+setInterval(() => {
+	let d = new Date();
+	$('.clock').html(d.toLocaleTimeString() + '<br>' + d.toDateString());
+}, 1000);
