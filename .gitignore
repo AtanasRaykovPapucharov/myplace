@@ -1,0 +1,16 @@
+node_modules/
+bower_components/
+app/ui/css/
+
+.nyc_output
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/angulardoc.json
+
+app/config/constants.json
+coverage

@@ -1,0 +1,32 @@
+extends common/layout
+
+block main-content
+	section.registration-block
+		.registration-container
+			h2 Sign up
+			hr
+			form.registration-form(action='/sign-up', method='post')
+				fieldset
+					.input-group
+						.label-holder
+							label(for='user-email') E-mail:
+						input#signup-email.form-control.full-width(type='email', size='60', name='email')
+					.input-group
+						.label-holder
+							label(for='user-name') Name:
+						input#signup-username.form-control.full-width(type='text', size='60', name='name')
+					.input-group
+						.label-holder
+							label(for='user-password') Password:
+						input#signup-password.form-control(type='password', size='60', , name='password')
+					br
+					a.btn.btn-info.full-width(href='/forgot-password')
+						h5 Forgot your password?
+					input.btn.btn-primary(type='submit', value='Sign up')
+			hr
+			.log-bottom
+				br
+				span.new
+					| Have an account? 
+					a.btn.btn-success(href='/sign-in')
+						h5 Sign in

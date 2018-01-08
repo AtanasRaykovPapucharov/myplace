@@ -1,0 +1,28 @@
+extends common/layout
+
+block main-content
+	section.login-block
+		.login-container
+			h2 Sign in
+			hr
+			form.login-form(action='/sign-in', method='post')
+				fieldset
+					.input-group
+						.label-holder
+							label(for='user-email') E-mail:
+						input#signin-email.form-control.full-width(type='email', size='60', name='email')
+					.input-group
+						.label-holder
+							label(for='user-password') Password:
+						input#signin-password.form-control.full-width(type='password', size='60', name='password')
+					br
+					a.btn.btn-info.full-width(href='/forgot-password')
+						h5 Forgot your password?
+					input.btn.btn-success(type='submit', value='Sign in')
+			hr
+			.log-bottom
+				br
+				span.new
+					| Don't have an account? 
+					a.btn.btn-primary(href='/sign-up')
+						h5 Sign up
