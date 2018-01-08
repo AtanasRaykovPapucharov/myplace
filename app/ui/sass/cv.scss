@@ -1,0 +1,41 @@
+@import 'global';
+
+.wrapper-cv {
+    border: 1px solid $main-color;
+
+    .container {
+        .wrapper-img, .info.inner{
+            background-color: $main-color;
+        }
+
+        .wrapper-name, .cv-content {
+            text-align: center;
+        }
+    }
+
+    .container.info-content {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media only screen and (min-width : 480px) {
+}
+
+@media only screen and (min-width : 820px) {
+    .wrapper-cv {
+        .container {
+            .inner {
+                
+            }
+
+            .wrapper-img, .info.inner{
+                flex: 25%;
+            }
+
+            .wrapper-name, .cv-content {
+                flex: 75%;
+            }
+        }
+    }
+}

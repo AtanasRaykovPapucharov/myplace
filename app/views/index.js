@@ -17,6 +17,12 @@ module.exports = {
     cinema: (req, res, next) => {
         res.render("cinema", {});
     },
+    games: (req, res, next) => {
+        res.render("games", {});
+    },
+    books: (req, res, next) => {
+        res.render("books", {});
+    },
     writing: (req, res, next) => {
         res.render("writing", {});
     },

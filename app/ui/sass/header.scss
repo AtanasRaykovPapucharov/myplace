@@ -1,12 +1,4 @@
-$header-bg-color: rgb(155, 150, 150);
-$nav-text-hover: rgb(195, 195, 195);
-$main-color: rgb(194, 110, 110);
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+@import 'global';
 
 header, footer {
     background-color: $header-bg-color;
@@ -35,12 +27,13 @@ header, footer {
             float: right;
             list-style-type: none;
             background: $header-bg-color;
-            width: 50%;
+            width: 99%;
             cursor: pointer;
 
             li {
                 background-color: $main-color;
                 margin: 5px;
+                margin-right: 12px;
                 padding: 2px 2px 2px 20%;
 
                 a {
@@ -50,7 +43,7 @@ header, footer {
                     text-decoration: inherit;
                     padding: 2px;
 
-                    &:hover {
+                    &:hover, &:focus {
                         text-decoration: underline;
                         color: #F5F5F5;
                     }
@@ -114,7 +107,7 @@ header, footer {
 @media only screen and (min-width : 480px) {
 }
 
-@media only screen and (min-width : 940px) {
+@media only screen and (min-width : 820px) {
     body {
         background-color: #ECE6E6;
         background-image: url("../assets/images/bg-body.jpg");
@@ -126,17 +119,17 @@ header, footer {
         #logo {
             display: inline-block;
             // border: 1px solid purple;
-            width: 10% !important;
+            width: 15% !important;
         }
     
         nav {
             display: inline-block;
-            width:89% !important;
+            width:84% !important;
             // border:  1px solid blue;
             ul.menu-bar, ul.menu-bar-foot
             {
                 margin-bottom: 20px !important;
-                width: 88% !important;
+                width: 84% !important;
                 display: inherit !important;
 
                 li {
