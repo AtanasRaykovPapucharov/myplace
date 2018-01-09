@@ -1,29 +1,30 @@
 extends common/layout
 
 block main-content
-	.wrapper-cv
-		.container
-			.wrapper-img.inner
-				img(src="./assets/images/me.png", alt="IMG", width="50%")
-			.wrapper-name.inner
-				h2 ATANAS PAPUCHAROV
-				h4 WEB DEVELOPER
-		.container.info-content
-			.info.inner
-				h2 Atanas Papucharov
+	.cv-wrapper
+		.cv-head.container-flex
+			.cv-img.item-flex-1
+				img.down-20(src="./assets/images/me.png", alt="IMG", width="50%")
+			.cv-person.item-flex-3
+				h2.person-name.down-50=bigName
+				h4.person-title.up-20=title
+		.cv-content.container-flex-col-rev
+			.cv-social.item-flex-1
+				h2=name
 				.wrapper-info
 					span 
 						h5
 							i.fa.fa-map-marker(aria-hidden='true')
-							span   Sofia Liulin 717 C 56
-					span
+							span=address 
+					span 
 						h5
 							i.fa.fa-phone(aria-hidden='true')
-							span   +359 9887 43 506
-					span
+							span=tel 
+					span 
 						h5
 							i.fa.fa-envelope(aria-hidden='true')
-							span   at.papucharov@gmail.com
+							span=email
+				hr
 				.wrapper-social
 					span
 						a(href='')
@@ -37,35 +38,39 @@ block main-content
 					span
 						a(href='')
 							i.fa.fa-linkedin(aria-hidden='true')
-			.cv-content.inner
-				.paragraph 
-					p WORK EXPERIENCE
-				.info-data
-					label(for="data") from 06/2017 to 01/2018
-					h3.data SAP Labs Bulgaria
-					h4 Diveloper Internship
-					hr.half
-					br
-					label(for="data") from 10/2009 to 01/2015
-					h3.data SBALO AD Sofia
-					h4 Medical Physicist
-					br
-				.paragraph 
-					p EDUCATION
-				.info-data
-					label(for="data") from 02/2016 to 03/2017
-					h3.data Telerik Academy
-					h4 Programming Student
-					hr.half
-					br
-					label(for="data") from 09/2009 to 06/2013
-					h3.data Sofia University "St. Kliment Ohridski"
-					h4 Master degree of Medical Physics
-					hr.half
-					br
-					label(for="data") from 09/2003 to 06/2009
-					h3.data Sofia University "St. Kliment Ohridski"
-					h4 Bachelor degree of Engineering Physics
-					br
-				.paragraph 
-					p SKILLS AND EXPERTIZE
+				hr
+			.cv-info.item-flex-3.up-25
+				section.cv-info-topic
+					h4 WORK EXPERIENCE
+				each ex in experience
+					.articles
+						article.container-flex
+							label.item-flex-1(for="item-data")=ex.time
+								hr.third-four
+								br
+							.item-data.item-flex-2
+								h2.data.up-10=ex.company
+								h4.up-20=ex.position
+								h5.up-10
+									span
+										em Key words:
+									br
+									span=ex.keys
+				section.cv-info-topic
+					h4 EDUCATION
+				each edu in education
+					.articles
+						article.container-flex
+							label.item-flex-1(for="item-data")=edu.time
+								hr.third-four
+								br
+							.item-data.item-flex-2
+								h2.data.up-10=edu.company
+								h4.up-20=edu.position
+								h5.up-10
+									span
+										em Key words:
+									br
+									span=edu.keys
+				section.cv-info-topic
+					h4 SKILLS AND EXPERTIZE

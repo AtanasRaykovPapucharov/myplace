@@ -3,27 +3,122 @@ $nav-text-hover: rgb(199, 199, 199);
 $light-hover: rgb(220, 220, 220);
 $light-hover-0:rgb(220, 198, 198);
 $main-color: rgb(194, 110, 110);
+$text-dark-color: rgb(86, 63, 86); 
+$light-shadow-color: rgb(235, 226, 225);
+$main-bg-color: rgb(192, 192, 192);
 
 * span i {
     color: $nav-text-hover;
 }
 
-hr {
-   border-bottom: 1px solid $light-hover; 
+body {
+    hr {
+        border-bottom: 1px solid $light-hover; 
+    }
+    
+    .half {
+        max-width: 50%;
+    }
+    
+    .third-four {
+        max-width: 75%;
+    }
+    
+    .tansparent {
+        color: transparent;
+        background-color: transparent;
+        border: transparent;
+    }
+    .disappear {
+        display: none;
+    }
+    
+    .appear {
+        display: inherit;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-flex-col-rev {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .item-flex-1 {
+        flex: 1;
+    }
+    
+    .item-flex-2 {
+        flex: 2;
+    }
+    
+    .item-flex-3 {
+        flex: 3;
+    }
+    
+    .item-flex-4 {
+        flex: 4;
+    }
+    
+    .item-flex-5 {
+        flex: 5;
+    }
+    
+    .down-5 {
+        margin-top: 5px;
+    }
+    
+    .down-10 {
+        margin-top: 10px;
+    }
+    
+    .down-15 {
+        margin-top: 15px;
+    }
+    
+    .down-20 {
+        margin-top: 20px;
+    }
+    
+    .down-25 {
+        margin-top: 25px;
+    }
+    
+    .down-50 {
+        margin-top: 50px;
+    }
+    
+    .up-5 {
+        margin-top: -5px;
+    }
+    
+    .up-10 {
+        margin-top: -10px;
+    }
+    
+    .up-15 {
+        margin-top: -15px;
+    }
+    
+    .up-20 {
+        margin-top: -20px;
+    }
+    
+    .up-25 {
+        margin-top: -25px;
+    }
 }
-
-hr.half {
-    max-width: 50%;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
 
 @media only screen and (min-width : 820px) {
-    .container {
+    .container, .container-flex, .container-flex-col-rev {
         flex-direction: row !important;
     }
    

@@ -1,0 +1,9 @@
+{
+    "header-nav": {
+        "about": "ABOUT",
+        "blog": "BLOG",
+        "cv": "CV",
+        "collections": "COLLECTIONS",
+        "settings": "SETTINGS"
+    }
+}

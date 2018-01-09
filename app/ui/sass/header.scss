@@ -23,12 +23,13 @@ header, footer {
 
         ul.menu-bar, ul.menu-bar-foot
         {
+            position: absolute;
             margin-top: -5px;
             display: none; 
             float: right;
             list-style-type: none;
             background: $header-bg-color;
-            width: 99%;
+            width: 76%;
             cursor: pointer;
 
             li {
@@ -111,6 +112,18 @@ header, footer {
 }
 
 @media only screen and (min-width : 480px) {
+    header, footer {
+
+        nav {
+            ul.menu-bar, ul.menu-bar-foot
+            {
+                width: 88% !important;
+
+                li {
+                }
+            } //ul // menu-bar-btn
+        }
+    }
 }
 
 @media only screen and (min-width : 820px) {
@@ -134,6 +147,7 @@ header, footer {
             // border:  1px solid blue;
             ul.menu-bar, ul.menu-bar-foot
             {
+                position: inherit !important;
                 margin-bottom: 20px !important;
                 width: 84% !important;
                 display: inherit !important;

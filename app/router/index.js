@@ -16,7 +16,7 @@ module.exports = (express, app, mongo, nodemailer, params, view) => {
     app.get("/writing", view.writing);
     app.get("/tests", view.tests);
     app.get("/cv", view.cv);
-    app.get("/contactme", view.contactme);
+    app.get("/about", view.about);
     app.get("*", (req, res) => {
         res.redirect("/home");
     });

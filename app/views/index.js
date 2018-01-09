@@ -27,13 +27,14 @@ module.exports = {
         res.render("writing", {});
     },
     cv: (req, res, next) => {
-        res.render("cv", {});
+        let data = require("../data/cvs.json");
+        res.render("cv", data);
     },
     tests: (req, res, next) => {
         res.render("tests", {});
     },
-    contactme: (req, res, next) => {
-        res.render("contact-me", {});
+    about: (req, res, next) => {
+        res.render("about", {});
     },
     changePassword: (req, res, next) => {
         res.render("change-password", {});
