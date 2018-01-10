@@ -13,9 +13,11 @@
     .cv-content {
         .cv-social {
             background-color: $main-color;
+            i {
+                color: $light-hover;
+            }
             .wrapper-info span h5 {
-                color: $main-bg-color;
-                opacity: 0.9;
+                color: $light-hover;
                 i {
                     float: left;
                     margin-left: 3%;
@@ -32,15 +34,16 @@
         }
         .cv-info {
             section.cv-info-topic {
-                text-align: left;
+                text-align: center;
                 background-color: $main-color;
+                color: $main-bg-color;
                 margin-left: 34%;
                 h4 {
                     margin-left: 3%;
                 }
             }
             .articles article {
-                text-align: left;
+                text-align: center;
                 padding-left: 1%;
                 label {
                     text-align: center;
@@ -48,8 +51,10 @@
                 }
                 .item-data {
                     h2 {
+                        margin-top: -5px;
+                    }
+                    h2, h3 {
                         text-shadow: -1px 1px $light-shadow-color;
-                        margin-top: -3px;
                     }
                 }
             }
@@ -61,4 +66,41 @@
 }
 
 @media only screen and (min-width : 820px) {
+    .cv-wrapper {
+        .cv-head    {
+            .cv-img {
+            }
+        }
+        .cv-content {
+            .cv-social {
+                background-color: $main-color;
+                i {
+                }
+                .wrapper-info span h5 {
+                }
+                .wrapper-social {
+                    span {
+                    }
+                }
+            }
+            .cv-info {
+                section.cv-info-topic {
+                    text-align: left;
+                    h4 {
+                    }
+                }
+                .articles article {
+                    text-align: left;
+                    label {
+                    }
+                    .item-data {
+                        h2 {
+                        }
+                        h2, h3 {
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

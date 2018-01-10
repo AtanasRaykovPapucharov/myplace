@@ -45,7 +45,7 @@ header, footer {
                     text-decoration: inherit;
                     padding: 2px;
 
-                    &:hover, &:focus {
+                    &:hover, &:focus, &:after {
                         text-decoration: underline;
                         color: #F5F5F5;
                     }

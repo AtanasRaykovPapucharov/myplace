@@ -1,0 +1,27 @@
+@import 'global';
+
+.wrapper {
+    border: 1px solid $main-color;
+    .head    {
+        .head-up {
+            background-color: $main-color;
+        }
+        .title {
+
+        }
+    }
+    .content {
+        .content-aside {
+            background-color: $main-color;
+        }
+        .content-info {
+
+        }
+    }
+}
+
+@media only screen and (min-width : 480px) {
+}
+
+@media only screen and (min-width : 820px) {
+}

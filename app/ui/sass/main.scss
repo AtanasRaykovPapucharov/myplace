@@ -10,15 +10,34 @@
 	padding-bottom: 10px;
 	text-align: center;
 }
+.wrapper {
+    border: 1px solid $main-color;
+    .head    {
+        .head-up {
+            background-color: $main-color;
+        }
+        .title {
+
+        }
+    }
+    .content {
+        .content-aside {
+            background-color: $main-color;
+        }
+        .content-info {
+
+        }
+    }
+}
 
 @media only screen and (min-width : 480px) {
-		.main {
-			padding-right: 1.8%;
+	#main {
+		padding-right: 1.8%;
     }
 }
 
 @media only screen and (min-width : 820px) {
-    .main {
+    #main {
 			padding-right: 1.5%;
     }
 }

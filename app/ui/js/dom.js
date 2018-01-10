@@ -1,3 +1,35 @@
+// daily marker
+$(() => {
+	let today = new Date();
+	let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Tursday", "Friday", "Saturday"];
+	let color = "lightgrey";
+
+	switch (days[today.getDay()]) {
+		case "Sunday":
+			$(".wrapper-daily .day.sunday").css("background", color);
+			break;
+		case "Monday":
+			$(".wrapper-daily .day.monday").css("background", color);
+			break;
+		case "Tuesday":
+			$(".wrapper-daily .day.sunday").css("background", color);
+			break;
+		case "Wednesday":
+			$(".wrapper-daily .day.wednesday").css("background", color);
+			break;
+		case "Tursday":
+			$(".wrapper-daily .day.tursday").css("background", color);
+			break;
+		case "Friday":
+			$(".wrapper-daily .day.friday").css("background", color);
+			break;
+		case "Saturday":
+			$(".wrapper-daily .day.saturday").css("background", color);
+			break;
+
+	}
+})
+
 // language button
 $(() => {
 	let isBG = false;
