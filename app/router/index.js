@@ -8,12 +8,7 @@ module.exports = (express, app, mongo, nodemailer, params, view) => {
     app.get("/daily", view.daily);
     app.get("/blog", view.blog);
     app.get("/collections", view.collections);
-    app.get("/music", view.music);
-    app.get("/music", view.music);
-    app.get("/cinema", view.cinema);
-    app.get("/games", view.games);
-    app.get("/books", view.books);
-    app.get("/writing", view.writing);
+    app.get("/freetime", view.freetime);
     app.get("/tests", view.tests);
     app.get("/cv", view.cv);
     app.get("/about", view.about);

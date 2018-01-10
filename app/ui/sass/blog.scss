@@ -1,9 +1,48 @@
-.blog {
-    .blog-post {
-        width: 30%;
-        border: 1px solid black;
+@import 'global';
 
-        .blog-post-content {
+.wrapper {
+    .head {
+        .head-up {
+        }
+        .title {
+            .posts-container {
+                .post {
+                    padding: 2px;
+                    margin: 1%;
+                    width: 95%;
+                    height: 200px;
+                    .content-post h4 {
+                        overflow: hidden;
+                        background-color: lightgrey !important;
+                        min-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        .content-aside {
+        }
+        .content-info {
+        }
+    }
+}
+
+@media only screen and (min-width : 480px) {
+}
+
+@media only screen and (min-width : 820px) {
+    .wrapper {
+        .head {
+            .title {
+                .posts-container {
+                    .post {
+                        width: 20%;
+                        border: 1px solid $main-color !important;
+                        display: inline-block !important;
+                    }
+                }
+            }
         }
     }
 }

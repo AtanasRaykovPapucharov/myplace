@@ -3,8 +3,14 @@ extends common/layout
 block main-content
 	.wrapper
 		.head.container-flex
-			.head-up.item-flex-1 HEAD
-			.title.item-flex-3 BLOG TITLE
+			.head-up.item-flex-1 BLOG
+			.title.item-flex-3
+				.posts-container
+					each post in blog
+						a.post(href='/')
+							img.down-5(src=post.img, alt='img', width='65%')
+							.content-post.up-15
+								h4=post.title
 		.content.container-flex-col-rev
-			.content-aside.item-flex-1 ASIDE
-			.content-info.item-flex-3 CONTENT
+			.content-aside.item-flex-1 
+			.content-info.item-flex-3

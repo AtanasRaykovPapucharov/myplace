@@ -33,6 +33,7 @@ header, footer {
             cursor: pointer;
 
             li {
+                border-right: 1px solid #C0C0C0 !important;
                 background-color: $main-color;
                 margin: 5px;
                 margin-right: 12px;
@@ -54,10 +55,6 @@ header, footer {
                 img {
                     margin-top: 5px;
                 }
-            }
-
-            li.ab {
-                border-right: 1px solid #C0C0C0 !important;
             }
 
             li.clock-container {

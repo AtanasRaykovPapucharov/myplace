@@ -1,3 +1,5 @@
+let data = require("../ui/data/static.json");
+
 module.exports = {
     home: (req, res, next) => {
         res.render("home", {});
@@ -6,29 +8,16 @@ module.exports = {
         res.render("daily", {});
     },
     blog: (req, res, next) => {
-        res.render("blog", {});
+        res.render("blog", { blog: data.blog });
     },
     collections: (req, res, next) => {
         res.render("collections", {});
     },
-    music: (req, res, next) => {
-        res.render("music", {});
-    },
-    cinema: (req, res, next) => {
-        res.render("cinema", {});
-    },
-    games: (req, res, next) => {
-        res.render("games", {});
-    },
-    books: (req, res, next) => {
-        res.render("books", {});
-    },
-    writing: (req, res, next) => {
-        res.render("writing", {});
+    freetime: (req, res, next) => {
+        res.render("free-time", {});
     },
     cv: (req, res, next) => {
-        let data = require("../data/cvs.json");
-        res.render("cv", data);
+        res.render("cv", data.cv);
     },
     tests: (req, res, next) => {
         res.render("tests", {});
