@@ -2,35 +2,44 @@ module.exports = (dataApi, collectionName) => {
 	return {
 		getAll: (req, res, next) => {
 			dataApi.getAll(collectionName)
-				.then((blogs) => {
-					res.status(200).json(blogs);
+				.then((obj) => {
+					res.status(200).json(obj);
 				})
 				.catch((err) => {
 					res.send(err);
 				});
 		},
 		getById: (req, res, next) => {
-			dataApi.getOneById(collectionName, req.params.id)
-				.then((blog) => {
-					res.status(200).json(blog);
+			dataApi.getById(collectionName, req.params.id)
+				.then((obj) => {
+					res.status(200).json(obj);
 				})
 				.catch((err) => {
 					res.send(err);
 				});
 		},
 		getByTag: (req, res, next) => {
-			dataApi.getOneByTag(collectionName, req.params.tag)
-				.then((blog) => {
-					res.status(200).json(blog);
+			dataApi.getByTag(collectionName, req.params.tag)
+				.then((obj) => {
+					res.status(200).json(obj);
+				})
+				.catch((err) => {
+					res.send(err);
+				});
+		},
+		getByName: (req, res, next) => {
+			dataApi.getByName(collectionName, req.params.tag)
+				.then((obj) => {
+					res.status(200).json(obj);
 				})
 				.catch((err) => {
 					res.send(err);
 				});
 		},
 		post: (req, res, next) => {
-			dataApi.postOne(collectionName, req.body)
-				.then((blog) => {
-					res.status(200).json(blog);
+			dataApi.post(collectionName, req.body)
+				.then((obj) => {
+					res.status(200).json(obj);
 				})
 				.catch((err) => {
 					res.send(err);
@@ -39,8 +48,8 @@ module.exports = (dataApi, collectionName) => {
 		comment: (req, res, next) => {
 			const comment = req.body;
 
-			dataApi.pushOneComment(collectionName, req.params.id, comment)
-				.then((comment) => {
+			dataApi.push(collectionName, req.params.id, comment)
+				.then((obj) => {
 					if (comment) {
 						res.status(200).json({ comment: comment, message: 'success' });
 					}

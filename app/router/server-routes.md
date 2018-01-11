@@ -1,29 +1,5 @@
 ## Server routes:
 
-### Users
-
-* `api/users`
-  * POST
-    * **Registers** a new user
-    * Needs **email**, **username** and **passHash** to be sent in the body of the request
-  * PUT
-    * **Logs in** an user
-    * Needs **email** and **passHash** to be sent in the body of the request
-    * If the request is valid returns **user**
-* `api/users/contact-us`
-  * POST
-    * Needs **email**, **subject** and **message** to be sent in the body 
-* `api/users/image`
-  * PUT
-    * Needs uploaded **image avatar url** to be sent in the body
-    * User must be **logged-in**
-* `api/users/change-password`
-  * PUT
-    * Needs **email**, **old password** and **new password** to be sent in the body 
-* `api/users/forgot-password`
-  * PUT
-    * Needs **email** to be sent in the body
-
 ### Blog
 
 * `api/blog`
@@ -63,8 +39,3 @@
     * **Push** a comment in a game with current 'id'
     * Needs **comment**, **username** and **date** to be sent in the body 
     * User must be **logged-in**
-
-###	Tags
-*	`api/tags`
-	*	GET
-		*	**Returns** an object with games, blog and all tags

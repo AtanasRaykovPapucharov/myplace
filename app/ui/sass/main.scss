@@ -16,6 +16,15 @@
         .head-up {
             background-color: $main-color;
             color: $light-hover;
+            h2 a {
+                border: 1px solid silver;
+                background-color: silver;
+                border-radius: 2px;
+                margin-left: 5px;
+                padding: 2px;
+                margin-bottom: 3px;
+                font-size: 0.5em;
+            }
         }
         .title.collection h2 {
             float: right;
@@ -27,6 +36,19 @@
     .content {
         .content-aside {
             background-color: $main-color;
+        }
+        
+        .content-aside .tag {
+            display: inline-block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            a {
+                border: 1px solid lightgrey;
+                border-radius: 5px;
+                margin: 2px;
+                padding: 1px;
+                background-color: lightgrey;
+            }
         }
         .content-info {
 

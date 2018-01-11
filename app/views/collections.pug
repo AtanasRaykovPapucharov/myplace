@@ -1,14 +1,19 @@
 extends common/layout
 
 block head-block
-	.head-up.item-flex-1 COLLECTIONS
+	.head-up.item-flex-1 
+		h2 COLLECTIONS
+			a(href='#/addnew') ADD NEW
 
 block title-block
 	.title.collection.item-flex-3
 		h2 ALL
 
 block aside-block
-	.content-aside.item-flex-1 TAGS
+	.content-aside.item-flex-1
+		each tag in tags
+			.tag
+				a(href='/')=tag
 
 block main-content
 	.content-info.item-flex-3
@@ -18,5 +23,3 @@ block main-content
 					img.down-5(src=post.img, alt='img', width='65%')
 					.content-post.up-15
 						h4=post.title
-		.up-15
-			button ADD NEW

@@ -23,6 +23,9 @@ $(() => {
             '/survivor': () => {
                 return view.survivor('#content-block');
             },
+            '/addnew': () => {
+                return view.addnew('#content-block');
+            },
             '*': () => {
                 appRouter.navigate('/')
             }

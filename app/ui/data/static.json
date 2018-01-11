@@ -1,4 +1,29 @@
 {
+    "tags": {
+        "blog": [
+            "programming",
+            "front-end",
+            "django",
+            "java script",
+            "AI",
+            "physics",
+            "programming",
+            "maths",
+            "front-end",
+            "AI",
+            "maths",
+            "java script",
+            "physics"
+        ],
+        "collections": [
+            "sci-fi",
+            "java script",
+            "front-end",
+            "maths",
+            "AI",
+            "physics"
+        ]
+    },
     "cv": {
         "name": "Atanas Papucharov",
         "bigName": "ATANAS PAPUCHAROV",
@@ -45,85 +70,5 @@
         "skills": [
             {}
         ]
-    },
-    "blog": [
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Life is beautiful when we are loved.",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Animals are beautiful people",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Alice in Wonderland",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Bush are on tttour again",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        },
-        {
-            "img": "./assets/images/brain.png",
-            "title": "Are we alone?",
-            "subtitle": "UFO's signs in ancient Africa",
-            "content": "<h1>Neshto si ....</h1>"
-        }
-    ]
+    }
 }

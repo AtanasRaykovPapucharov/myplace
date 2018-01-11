@@ -5,33 +5,32 @@ module.exports = (mongo) => {
 		getAll: (collectionName) => {
 			return REQUESTER.find(collectionName);
 		},
-		getOneById: (collectionName, id) => {
+		getById: (collectionName, id) => {
 			return REQUESTER.findOne(collectionName, id);
 		},
-		getOneByTag: (collectionName, tag) => {
+		getByTag: (collectionName, tag) => {
 			return REQUESTER.findOne(collectionName, { tags: tag });
 		},
-		getOneByName: (collectionName, name) => {
+		getByName: (collectionName, name) => {
 			return REQUESTER.findOne(collectionName, { name: name });
 		},
-		postOne: (collectionName, blog) => {
+		post: (collectionName, blog) => {
 			return REQUESTER.save(collectionName, blog);
 		},
-		pushOne: (collectionName, id, dataObj) => {
+		push: (collectionName, id, dataObj) => {
 			let updateObj = { $push: dataObj };
 			return REQUESTER.update(collectionName, id, updateObj);
 		},
-		setOne: (collectionName, id, dataObj) => {
+		set: (collectionName, id, dataObj) => {
 			let updateObj = { $set: dataObj };
 			return REQUESTER.update(collectionName, id, updateObj);
 		},
-
-		pushOneComment: (collectionName, id, comment) => {
-			let updateObj = { $push: { comments: comment }, $inc: { commentsCount: 1 } }
-			return REQUESTER.update(collectionName, id, updateObj);
+		increase: (collectionName, id, increaseObj) => {
+			return REQUESTER.findAndModify(collectionName, id, { $inc: increaseObj });
 		},
-		likeOneById: (collectionName, id) => {
-			return REQUESTER.findAndModify(collectionName, id, { $inc: { likes: 1 } });
+		pushAndIncrease: (collectionName, id, pushObj, increaseObj) => {
+			let updateObj = { $push: pushObj, $inc: increaseObj }
+			return REQUESTER.update(collectionName, id, updateObj);
 		}
 	}
 }

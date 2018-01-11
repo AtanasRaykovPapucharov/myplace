@@ -10,7 +10,7 @@ module.exports = (dataApi, collectionName) => {
 				});
 		},
 		getById: () => {
-			return dataApi.getOneById(collectionName, req.params.id)
+			return dataApi.getById(collectionName, req.params.id)
 				.then((data) => {
 					return data;
 				})
@@ -19,7 +19,16 @@ module.exports = (dataApi, collectionName) => {
 				});
 		},
 		getByTag: () => {
-			return dataApi.getOneByTag(collectionName, req.params.tag)
+			return dataApi.getByTag(collectionName, req.params.tag)
+				.then((data) => {
+					return data;
+				})
+				.catch((err) => {
+					return { error: err }
+				});
+		},
+		getByName: () => {
+			return dataApi.getByName(collectionName, req.params.name)
 				.then((data) => {
 					return data;
 				})

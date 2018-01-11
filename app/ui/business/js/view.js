@@ -19,5 +19,8 @@ const view = {
 	},
 	survivor: (selectorId, data) => {
 		return templateLoader.load(selectorId, './templates/survivor.html', data)
+	},
+	addnew: (selectorId, data) => {
+		return templateLoader.load(selectorId, './templates/addnew.html', data)
 	}
 }

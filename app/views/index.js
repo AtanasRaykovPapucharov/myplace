@@ -1,5 +1,5 @@
 module.exports = (mongo) => {
-    let data = require("../ui/data/static.json");
+    let staticData = require("../ui/data/static.json");
     let collectionData = require("../data")(mongo);
 
     return {
@@ -12,20 +12,23 @@ module.exports = (mongo) => {
         blog: (req, res, next) => {
             collectionData.blogData.getAll()
                 .then((data) => {
-                    res.render("blog", { blog: data });
+                    res.render("blog", { blog: data, tags: staticData.tags.blog });
                 });
         },
         collections: (req, res, next) => {
-            res.render("collections", { blog: data.blog });
-        },
-        freetime: (req, res, next) => {
-            res.render("free-time", {});
+            collectionData.blogData.getAll()
+                .then((data) => {
+                    res.render("collections", { blog: data, tags: staticData.tags.collections });
+                });
         },
         cv: (req, res, next) => {
-            res.render("cv", data.cv);
+            res.render("cv", staticData.cv);
         },
         tests: (req, res, next) => {
             res.render("tests", {});
+        },
+        freetime: (req, res, next) => {
+            res.render("free-time", {});
         },
         about: (req, res, next) => {
             res.render("about", {});
