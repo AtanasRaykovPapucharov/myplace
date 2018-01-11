@@ -1,6 +1,4 @@
-module.exports = (mongo, nodemailer, params) => {
-	const userData = require('./user.data')(mongo);
-
+module.exports = (mongo, collectionName, nodemailer, params) => {
 	return {
 		contactUs: (req, res, next) => {
 			const msgObj = req.body;
@@ -156,12 +154,6 @@ module.exports = (mongo, nodemailer, params) => {
 				})
 				.catch((err) => {
 					res.status(400).json({ error: err.message });
-				});
-		},
-		tags: (req, res, next) => {
-			userData.getTags()
-				.then((tags) => {
-					res.status(200).json(tags);
 				});
 		}
 	}
