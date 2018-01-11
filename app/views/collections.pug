@@ -1,10 +1,22 @@
 extends common/layout
 
+block head-block
+	.head-up.item-flex-1 COLLECTIONS
+
+block title-block
+	.title.collection.item-flex-3
+		h2 ALL
+
+block aside-block
+	.content-aside.item-flex-1 TAGS
+
 block main-content
-	.wrapper
-		.head.container-flex
-			.head-up.item-flex-1 COLLECTIONS
-			.title.item-flex-3
-		.content.container-flex-col-rev
-			.content-aside.item-flex-1
-			.content-info.item-flex-3
+	.content-info.item-flex-3
+		.posts-container
+			each post in blog
+				a.post(href='/')
+					img.down-5(src=post.img, alt='img', width='65%')
+					.content-post.up-15
+						h4=post.title
+		.up-15
+			button ADD NEW

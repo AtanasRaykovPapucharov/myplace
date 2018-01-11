@@ -1,62 +1,56 @@
 @import 'global';
 
-.cv-wrapper {
-    border: 1px solid $main-color;
-    .cv-head    {
-        .cv-img {
-            background-color: $main-color;
-            img {
-                border-radius: 50%;
-            }
+.cv-img {
+    background-color: $main-color;
+    img {
+        border-radius: 50%;
+    }
+}
+
+.content-aside {
+    background-color: $main-color;
+    i {
+        color: $light-hover;
+    }
+    .wrapper-info span h5 {
+        color: $light-hover;
+        i {
+            float: left;
+            margin-left: 3%;
+        }
+        span {
+            font-size: 1em;
         }
     }
-    .cv-content {
-        .cv-social {
-            background-color: $main-color;
-            i {
-                color: $light-hover;
-            }
-            .wrapper-info span h5 {
-                color: $light-hover;
-                i {
-                    float: left;
-                    margin-left: 3%;
-                }
-                span {
-                    font-size: 1em;
-                }
-            }
-            .wrapper-social {
-                span {
-                    margin-right: 10%;
-                }
-            }
+    .wrapper-social {
+        span {
+            margin-right: 10%;
         }
-        .cv-info {
-            section.cv-info-topic {
-                text-align: center;
-                background-color: $main-color;
-                color: $main-bg-color;
-                margin-left: 34%;
-                h4 {
-                    margin-left: 3%;
-                }
+    }
+}
+.content-info {
+    section.cv-info-topic {
+        text-align: center;
+        background-color: $main-color;
+        color: $main-bg-color;
+        margin-left: 34%;
+        h4 {
+            margin-left: 3%;
+        }
+    }
+    .articles article {
+        text-align: center;
+        padding-left: 1%;
+        label {
+            text-align: center;
+            font-size: 1em;
+        }
+        .item-data {
+            h2 {
+                margin-top: -5px;
             }
-            .articles article {
-                text-align: center;
-                padding-left: 1%;
-                label {
-                    text-align: center;
-                    font-size: 1em;
-                }
-                .item-data {
-                    h2 {
-                        margin-top: -5px;
-                    }
-                    h2, h3 {
-                        text-shadow: -1px 1px $light-shadow-color;
-                    }
-                }
+            h2, h3 {
+                text-shadow: -1px 1px $light-shadow-color;
             }
         }
     }
@@ -66,39 +60,31 @@
 }
 
 @media only screen and (min-width : 820px) {
-    .cv-wrapper {
-        .cv-head    {
-            .cv-img {
+    .content-aside {
+        background-color: $main-color;
+        i {
+        }
+        .wrapper-info span h5 {
+        }
+        .wrapper-social {
+            span {
             }
         }
-        .cv-content {
-            .cv-social {
-                background-color: $main-color;
-                i {
-                }
-                .wrapper-info span h5 {
-                }
-                .wrapper-social {
-                    span {
-                    }
-                }
+    }
+    .content-info {
+        section.cv-info-topic {
+            text-align: left;
+            h4 {
             }
-            .cv-info {
-                section.cv-info-topic {
-                    text-align: left;
-                    h4 {
-                    }
+        }
+        .articles article {
+            text-align: left;
+            label {
+            }
+            .item-data {
+                h2 {
                 }
-                .articles article {
-                    text-align: left;
-                    label {
-                    }
-                    .item-data {
-                        h2 {
-                        }
-                        h2, h3 {
-                        }
-                    }
+                h2, h3 {
                 }
             }
         }

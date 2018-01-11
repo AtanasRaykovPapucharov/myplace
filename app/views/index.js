@@ -11,7 +11,7 @@ module.exports = {
         res.render("blog", { blog: data.blog });
     },
     collections: (req, res, next) => {
-        res.render("collections", {});
+        res.render("collections", { blog: data.blog });
     },
     freetime: (req, res, next) => {
         res.render("free-time", {});

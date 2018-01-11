@@ -17,8 +17,11 @@
             background-color: $main-color;
             color: $light-hover;
         }
-        .title {
-
+        .title.collection h2 {
+            float: right;
+            background-color: $main-color;
+            color: lightgrey;
+            width:40%;
         }
     }
     .content {

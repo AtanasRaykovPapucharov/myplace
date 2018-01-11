@@ -1,0 +1,11 @@
+@import 'global';
+
+.topics-nav-wrapper h4 {
+    color: $main-color;
+    background-color: $main-bg-color;
+    width: 70%;
+    margin-left: 15%;
+    &:hover {
+        color: wheat;
+    }
+}

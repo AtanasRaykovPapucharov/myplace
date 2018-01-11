@@ -5,8 +5,18 @@ html(lang="en")
   body
     include header
 
-    main#main
-      block main-content
+    main
+      #main.wrapper
+        .head.container-flex
+          #head.head-up.item-flex-1
+            block head-block
+          #title.title.item-flex-3
+            block title-block
+        .content.container-flex-col-rev
+          #aside.content-aside.item-flex-1 
+            block aside-block
+          #content-block.content-info.item-flex-3 
+            block main-content
 
     include footer
 

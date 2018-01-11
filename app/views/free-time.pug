@@ -1,25 +1,28 @@
 extends common/layout
 
+block head-block
+	.head-up.item-flex-1
+		.topics-nav-wrapper
+			h4.item-flex-1
+				a(href='#/music') MUSIC
+			h4.item-flex-1.up-15
+				a(href='#/movies') MOVIES
+			h4.item-flex-1.up-15
+				a(href='#/games') GAMES
+			h4.item-flex-1.up-15
+				a(href='#/books') BOOKS
+			h4.item-flex-1.up-15
+				a(href='#/writing') WRITING
+			h4.item-flex-1.up-15
+				a(href='#/sports') SPORTS
+			h4.item-flex-1.up-15
+				a(href='#/survivor') SURVIVOR
+
+block title-block
+	.title.item-flex-3 TITLE
+
+block aside-block
+	.content-aside.item-flex-1 ASIDE
+
 block main-content
-	.wrapper
-		.head.container-flex
-			.head-up.item-flex-1
-				.topics-nav-wrapper
-					h4.item-flex-1
-						a(href='#/music') MUSIC
-					h4.item-flex-1.up-15
-						a(href='#/cinema') CINEMA
-					h4.item-flex-1.up-15
-						a(href='#/games') GAMES
-					h4.item-flex-1.up-15
-						a(href='#/books') BOOKS
-					h4.item-flex-1.up-15
-						a(href='#/writing') WRITING
-					h4.item-flex-1.up-15
-						a(href='#/sports') SPORTS
-					h4.item-flex-1.up-15
-						a(href='#/surviver') SURVIVER
-			.title.item-flex-3 Free Time TITLE
-		.content.container-flex-col-rev
-			.content-aside.item-flex-1 ASIDE
-			.content-info.item-flex-3 Content
+	.content-info.item-flex-3 CONTENT

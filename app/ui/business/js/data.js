@@ -4,10 +4,6 @@ function getData(url) {
     });
 }
 
-const filesPath = './js/data/'
+const filesPath = ''
 const data = {
-    getBlogs: getData(filesPath + 'blogs.json'),
-    getCollections: getData(filesPath + 'collections.json'),
-    getCvs: getData(filesPath + 'cvs.json'),
-    getDom: getData(filesPath + 'dom.json')
 }

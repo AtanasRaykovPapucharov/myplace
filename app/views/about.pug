@@ -1,10 +1,13 @@
 extends common/layout
 
+block head-block
+	.head-up.item-flex-1 ABOUT
+
+block title-block
+	.title.item-flex-3 TITLE
+
+block aside-block
+	.content-aside.item-flex-1 ASIDE
+
 block main-content
-	.wrapper
-		.head.container-flex
-			.head-up.item-flex-1 ABOUT
-			.title.item-flex-3
-		.content.container-flex-col-rev
-			.content-aside.item-flex-1
-			.content-info.item-flex-3
+	.content-info.item-flex-3 CONTENT
