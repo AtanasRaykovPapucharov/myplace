@@ -1,0 +1,14 @@
+@import 'global';
+
+form input {
+    border: 2px solid $text-dark-color;
+	color: midnightblue;
+}
+
+.add-form div .add-title {
+		width: 67%;
+}
+
+.add-form form input.upload-image {
+	width: 20px !important;
+}

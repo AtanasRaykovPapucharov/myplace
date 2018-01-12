@@ -1,4 +1,4 @@
-const toastrNotifier = (() => {
+const notifier = (() => {
 	class Notifier {
 
 		success(msg) {

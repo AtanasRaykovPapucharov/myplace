@@ -22,5 +22,8 @@ const view = {
 	},
 	addnew: (selectorId, data) => {
 		return templateLoader.load(selectorId, './templates/addnew.html', data)
+	},
+	singleObject: (selectorId, data) => {
+		return templateLoader.load(selectorId, './templates/object-single.html', data)
 	}
 }

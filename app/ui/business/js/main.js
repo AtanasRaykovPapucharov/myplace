@@ -2,17 +2,22 @@ $(() => {
     const appRouter = new Navigo(null, true)
     appRouter
         .on({
+            '/blog/:id': (params) => {
+                data.getBlogById(params.id).then((blog) => {
+                    return view.singleObject('#title', blog);
+                })
+            },
             '/books': () => {
-                return view.books('#content-block');
+                return view.books('#title');
             },
             '/music': () => {
-                return view.music('#content-block');
+                return view.music('#title');
             },
             '/games': () => {
-                return view.games('#content-block');
+                return view.games('#title');
             },
             '/movies': () => {
-                return view.movies('#content-block');
+                return view.movies('#title');
             },
             '/writing': () => {
                 return view.writing('#content-block');
@@ -21,10 +26,13 @@ $(() => {
                 return view.sports('#content-block');
             },
             '/survivor': () => {
-                return view.survivor('#content-block');
+                return view.survivor('#title');
             },
             '/addnew': () => {
-                return view.addnew('#content-block');
+                let href = document.location.href;
+                let indexStart = document.location.origin.length + 1;
+                let indexEnd = href.length - 8;
+                return view.addnew('#title', { role: href.substring(indexStart, indexEnd) });
             },
             '*': () => {
                 appRouter.navigate('/')

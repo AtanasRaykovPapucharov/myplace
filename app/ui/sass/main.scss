@@ -17,10 +17,10 @@
             background-color: $main-color;
             color: $light-hover;
             h2 a {
-                border: 1px solid silver;
+                border: 2px solid $header-bg-color;
                 background-color: silver;
                 border-radius: 2px;
-                margin-left: 5px;
+                margin-left: 15px;
                 padding: 2px;
                 margin-bottom: 3px;
                 font-size: 0.5em;

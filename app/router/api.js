@@ -11,7 +11,7 @@ module.exports = (express, mongo, nodemailer, params) => {
 		.get('/blog', data.blog.getAll)
 		.get('/blog/:id', data.blog.getById)
 		.put('/blog/:tag', data.blog.getByTag)
-		// .post('/blog', controllers.blog.post)
+		.post('/blog', data.blog.post)
 		// .put('/blog/comment/:id', controllers.blog.comment)
 		// .put('/blog/like/:id', controllers.blog.like)
 		// .put('/blog/bookmark/:id', (req, res, next) => { })
@@ -19,10 +19,10 @@ module.exports = (express, mongo, nodemailer, params) => {
 		.get('/games', data.game.getAll)
 		.get('/games/:id', data.game.getById)
 		.put('/games/:tag', data.game.getByTag)
-		// .post('/games', controllers.gameCtrl.newGame)
+		.post('/games', data.game.post)
 		// .put('/games/comment/:id', controllers.gameCtrl.commentsUpdate)
 		// .put('/games/like/:id', controllers.gameCtrl.likeGame)
 		// .put('/games/bookmark/:id', (req, res, next) => { })
 
-		// .get('/tags', controllers.userCtrl.tags)
+	// .get('/tags', controllers.userCtrl.tags)
 }

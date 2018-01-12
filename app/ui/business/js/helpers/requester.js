@@ -1,4 +1,4 @@
-const ajaxRequester = (() => {
+const requester = (() => {
 	class Requester {
 		_sendAjax(method, url, options) {
 			options = options || {};

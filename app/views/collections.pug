@@ -19,7 +19,8 @@ block main-content
 	.content-info.item-flex-3
 		.posts-container
 			each post in blog
-				a.post(href='/')
+				- hypref ='#/' + post.role +'/'+ post._id
+				a.post(href=hypref)
 					img.down-5(src=post.img, alt='img', width='65%')
 					.content-post.up-15
 						h4=post.title

@@ -1,1 +1,53 @@
-<h1>AddNew</h1>
+<div>
+    <div id="text-editor-scripts">
+    </div>
+
+    <div class="add-form">
+        <h3>Add new {{role}}</h3>
+        <hr>
+        <div>
+            <form id="add-form-{{role}}" action="" method="POST">
+                <input type="hidden" name="role" value="{{role}}">
+                <div class="name">
+                    <label for="title">Title: </label>
+                    <br>
+                    <input class="add-title" type="text" name="title" value="">
+                    <br>
+                </div>
+                <div>
+                    <br>
+                    <label for="title">Image (as url or upload file): </label>
+                    <br>
+                    <input class="add-image" type="text" name="image" value="">
+                    <input class="uploade-image" style="width: 40%"  type="file" value="upload">
+                    <a href="#/upload-image" class="btn btn-primary">Upload</a>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                    <label for="description">Description: </label>
+                    <br>
+                    <div myEditorContainer>
+                        <textarea name="description" id="myEditor"></textarea>
+                        <br>
+                    </div>
+                    <label for="all-tags">Tags (keywords separаted by a comma, semicolon or empty space): </label>
+                    <br>
+                    <input type="text" id="all-tags" value="">
+                    <br>
+                </div>
+                <br>
+                <a href="#/post/{{role}}">
+                    <h5>Submit</h5>
+                </a>
+            </form>
+            <hr>
+        </div>
+
+        <script>
+            $(function () {
+                $('#myEditor').froalaEditor({ toolbarInline: false })
+            });
+        </script>
+    </div>
+</div>
