@@ -1,5 +1,6 @@
-* span i{color:#c7c7c7}body hr{border-bottom:1px solid gainsboro}body a{text-decoration:none}
-body .half{max-width:50%}body .third-four{max-width:75%}body .tansparent{color:transparent;background-color:transparent;border:transparent}
+@charset "UTF-8";* span i{color:#c7c7c7}body hr{border-bottom:1px solid gainsboro}
+body a{text-decoration:none}body .half{max-width:50%}body .third-four{max-width:75%}
+body .tansparent{color:transparent;background-color:transparent;border:transparent}
 body .disappear{display:none}body .appear{display:inherit}body .container{display:flex;flex-direction:column}
 body .container-flex{display:flex;flex-direction:column}body .container-flex-col-rev{display:flex;flex-direction:column-reverse}
 body .item-flex-1{flex:1}body .item-flex-2{flex:2}body .item-flex-3{flex:3}body .item-flex-4{flex:4}
@@ -10,9 +11,9 @@ body .up-3{margin-top:-3px}body .up-5{margin-top:-5px}body .up-10{margin-top:-10
 body .up-15{margin-top:-15px}body .up-20{margin-top:-20px}body .up-25{margin-top:-25px}
 body .up-35{margin-top:-35px}body .up-50{margin-top:-50px}@media only screen and (min-width:820px){.container,.container-flex,.container-flex-col-rev{flex-direction:row !important}
 }form input{border:2px solid #563f56;color:midnightblue}.add-form div .add-title{width:67%}
-.add-form form input.upload-image{width:20px !important}* span i{color:#c7c7c7}body hr{border-bottom:1px solid gainsboro}
-body a{text-decoration:none}body .half{max-width:50%}body .third-four{max-width:75%}
-body .tansparent{color:transparent;background-color:transparent;border:transparent}
+.add-form form input.upload-image{width:20px !important}#add-editor{margin-left:2%}
+* span i{color:#c7c7c7}body hr{border-bottom:1px solid gainsboro}body a{text-decoration:none}
+body .half{max-width:50%}body .third-four{max-width:75%}body .tansparent{color:transparent;background-color:transparent;border:transparent}
 body .disappear{display:none}body .appear{display:inherit}body .container{display:flex;flex-direction:column}
 body .container-flex{display:flex;flex-direction:column}body .container-flex-col-rev{display:flex;flex-direction:column-reverse}
 body .item-flex-1{flex:1}body .item-flex-2{flex:2}body .item-flex-3{flex:3}body .item-flex-4{flex:4}
@@ -144,4 +145,6 @@ body .up-35{margin-top:-35px}body .up-50{margin-top:-50px}@media only screen and
 .wrapper .content .content-aside{background-color:#c26e6e}.wrapper .content .content-aside .tag{display:inline-block;padding-top:5px;padding-bottom:5px}
 .wrapper .content .content-aside .tag a{border:1px solid lightgrey;border-radius:5px;margin:2px;padding:1px;background-color:lightgrey}
 @media only screen and (min-width:480px){#main{padding-right:1.8%}}@media only screen and (min-width:820px){#main{padding-right:1.5%}
-}header nav ul li.hidden{display:none}
+}.single-object .tags-wrapper a{margin:2px;padding:2px;border:1px solid grey}.single-object #single-content-container{padding-left:2%;text-align:justify}
+.single-object #single-content-container img{float:right;margin:0}.single-object div а.add-new{float:right !important}
+header nav ul li.hidden{display:none}

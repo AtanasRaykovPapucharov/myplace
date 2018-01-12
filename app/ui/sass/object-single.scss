@@ -1,12 +1,22 @@
-.add-new {
-	color: darkorange;
-	text-shadow: -1px 1px black;
+.single-object {
+	.tags-wrapper a {
+		margin: 2px;
+		padding: 2px;
+		border: 1px solid grey;
+	}
+	.comments h4{
+
+	}
+	#single-content-container {
+		padding-left: 2%;
+		text-align: justify;
+		img {
+			float: right;
+			margin: 0;
+		}
+	}
 }
 
 .single-object div а.add-new {
 	float: right !important;
-}
-
-.liked {
-	color: #FFFBD0;
 }

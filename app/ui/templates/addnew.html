@@ -14,24 +14,29 @@
                     <input class="add-title" type="text" name="title" value="">
                     <br>
                 </div>
+                <div class="name">
+                    <label for="subtitle">Subtitle: </label>
+                    <br>
+                    <input class="add-title" type="text" name="subtitle" value="">
+                    <br>
+                </div>
                 <div>
                     <br>
                     <label for="title">Image (as url or upload file): </label>
                     <br>
-                    <input class="add-image" type="text" name="image" value="">
-                    <input class="uploade-image" style="width: 40%"  type="file" value="upload">
+                    <input class="uploade-image" style="width: 40%" type="file" value="upload">
                     <a href="#/upload-image" class="btn btn-primary">Upload</a>
                     <br>
                 </div>
                 <div>
                     <br>
-                    <label for="description">Description: </label>
+                    <label for="content">Content: </label>
                     <br>
-                    <div myEditorContainer>
-                        <textarea name="description" id="myEditor"></textarea>
+                    <div id="add-editor">
+                        <textarea name="content" id="myEditor"></textarea>
                         <br>
                     </div>
-                    <label for="all-tags">Tags (keywords separаted by a comma, semicolon or empty space): </label>
+                    <label for="all-tags">Tags (separаted by a comma, semicolon or empty space): </label>
                     <br>
                     <input type="text" id="all-tags" value="">
                     <br>

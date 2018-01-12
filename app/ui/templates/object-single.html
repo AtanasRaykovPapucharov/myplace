@@ -1,6 +1,26 @@
 <div class="single-object">
-	<h2>{{title}}</h3>
-	<img src="{{img}}" alt="img" width="50px">
-	<h4>{{content}}</h4>
-
+	<h2>{{title}}</h2>
+	<h3>{{subtitle}}</h3>
+	<p id="single-content-container">
+		<img src="{{img}}" alt="image" width="40%">
+		{{content}}
+	</p>
+	<div class="tags-wrapper">
+		<hr> 
+		{{#each tags}}
+		<a href="#/tag/{{../role}}/{{this}}" class="btn btn-primary" style="color: #FFE2AD;">{{this}}</a> 
+		{{/each}}
+	</div>
+	<hr> <h4 class="comments">Comments: </h4>
+	<ul>
+		{{#each comments}}
+		<li>
+			<p>{{this}}</p>
+		</li>
+		{{/each}}
+	</ul>
+	<br>
+	<textarea id="comment-add-area" rows="3" cols="21"></textarea>
+	<span><a id="comment-add-btn" href="#/add-comment/{{role}}/{{_id}}" class="btn btn-success">New</a></span>
+	<hr>
 </div>
