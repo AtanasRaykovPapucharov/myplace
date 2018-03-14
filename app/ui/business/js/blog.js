@@ -13,12 +13,13 @@ const blog = {
         });
 
         formObj.comments = [];
-        formObj.date = new Date();
+        let date = new Date();
+        formObj.date = date.toLocaleDateString();
 
         data.postBlog(formObj)
             .then((resp) => {
                 console.log(resp);
-               notifier.success('Blog post success!');
+                notifier.success('Blog post success!');
             })
             .catch((err) => {
                 throw ('Server error: ' + err);

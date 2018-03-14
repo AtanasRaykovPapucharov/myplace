@@ -23,5 +23,5 @@ module.exports = (express, app, params) => {
 	}
 	app.use(session(sessionObj));
 
-	app.use('/', express.static(path.join(__dirname, "../ui")));
+	app.use("/", express.static(path.join(__dirname, "../ui")));
 }

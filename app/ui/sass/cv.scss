@@ -16,7 +16,8 @@
         color: $light-hover;
         i {
             float: left;
-            margin-left: 3%;
+            margin-left: 11%;
+            font-size: 1.4em;
         }
         span {
             font-size: 1em;
@@ -24,7 +25,10 @@
     }
     .wrapper-social {
         span {
-            margin-right: 10%;
+            margin-right: 13%;
+            i { 
+                font-size: 1.4em;
+            }
         }
     }
 }

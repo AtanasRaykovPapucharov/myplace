@@ -118,4 +118,22 @@ block main-content
 									br
 									span=edu.keys
 				section.cv-info-topic
+					h4 PROGRAMMING LANGUAGES
+				ul
+					each lang in languages
+						li
+							span=lang.name
+						- var n=lang.percent/20
+						while 0 < n, n--
+							span *
+
+				section.cv-info-topic
+					h4 TECHNOLOGIES
+				ul
+					each tech in technologies
+						li=tech.name
+				section.cv-info-topic
 					h4 SKILLS
+				ul
+					each skill in skills
+						li=skill

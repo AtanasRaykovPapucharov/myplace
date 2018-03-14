@@ -1,3 +1,19 @@
+function previewFile() {
+    let preview = document.querySelector('img');
+    file = document.querySelector('input[type=file]').files[0];
+
+    let reader = new FileReader();
+
+    reader.onloadend = function () {
+        let img = reader.result;
+        preview.src = img;
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+}
+
 $(() => {
     const SERVICE = {
         getBlogById: (params) => {
@@ -47,13 +63,13 @@ $(() => {
             '/blog/:id': SERVICE.getBlogById,
             '/post/blog': SERVICE.postBlog,
             '/addnew': SERVICE.addNew,
-            '/books': () => { return view.books('#title') },
-            '/music': () => { return view.music('#title') },
-            '/games': () => { return view.games('#title') },
-            '/movies': () => { return view.movies('#title') },
+            '/books': () => { return view.books('#content-block') },
+            '/music': () => { return view.music('#content-block') },
+            '/games': () => { return view.games('#content-block') },
+            '/movies': () => { return view.movies('#content-block') },
             '/writing': () => { return view.writing('#content-block') },
             '/sports': () => { return view.sports('#content-block') },
-            '/survivor': () => { return view.survivor('#title') },
+            '/survivor': () => { return view.survivor('#content-block') },
             '*': () => { appRouter.navigate('/') }
         })
         .notFound(() => {
